@@ -1,0 +1,14 @@
+node_modules/
+bin/
+obj/
+
+.vscode/
+.vs/
+*.user
+*.suo
+
+*.log
+*.lock
+*.DS_Store
+
+.env

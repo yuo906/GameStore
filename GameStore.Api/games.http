@@ -1,0 +1,32 @@
+GET http://localhost:5046/games
+
+###
+GET http://localhost:5046/genres
+
+###
+GET http://localhost:5046/games/2
+
+###
+POST http://localhost:5046/games
+Content-Type: application/json
+
+{
+    "Name": "TEST",
+    "GenreId": 5,
+    "Price": 7.99,
+    "ReleaseDate": "2022-11-18"
+}
+
+###
+PUT http://localhost:5046/games/2  
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genreId": 1,
+    "price": 39.99,
+    "releaseDate": "2008-02-01"
+}
+
+###
+DELETE http://localhost:5046/games/4
